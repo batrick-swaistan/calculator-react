@@ -174,7 +174,9 @@ function formatoperator(operand){
 
   const [integer,decimal]=operand.split('.')
 
-  if (decimal == null) return INTEGER_FORMATTER.format(integer)
+  if (decimal == null) return INTEGER_FORMATTER.format(integer);
+
+  return `${INTEGER_FORMATTER.format(integer)}.${decimal}`;
 }
 
 function App() {
@@ -193,7 +195,7 @@ function App() {
     <div className="calculator-grid">
       <div className="output"> 
 
-        <div className="previous-operand">{previousOperand} {operation}</div>
+        <div className="previous-operand">{formatoperator(previousOperand)} {operation}</div>
         <div className="current-operand">{ formatoperator(currentOperand)} </div>
 
       </div>
