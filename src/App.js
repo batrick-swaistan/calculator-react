@@ -114,9 +114,14 @@ function reducer(state,{type ,payload}){
       }
     }
 
+    if (state.currentOperand === null || state.currentOperand === undefined) {
+      
+      return state; 
+    }
 
+    
 
-    if(state.currentOperand.length===1){
+    if(state.currentOperand.length === 1){
       return{
         ...state,
         currentOperand:null
@@ -125,7 +130,7 @@ function reducer(state,{type ,payload}){
     
     return{
       ...state,
-      currentOperand: state.currentOperand.slice(0,-1)
+      currentOperand: state.currentOperand.slice(0,state.currentOperand.length-1)
     }
   }
 }
