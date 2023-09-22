@@ -4,7 +4,7 @@
 }
 
 body{
-    margin: 0;
+    
     font-family: 'Nunito', sans-serif;
     background: #090a1a;
     margin: 0;
@@ -12,11 +12,9 @@ body{
     color: white;
 }
 
-h1{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   font-size: 42 px !important;
+.header h1{
+   text-align: center;
+   font-size: 300 px !important;
    line-height: 2.2rem;
    font-weight: 700;
    
@@ -103,3 +101,22 @@ h1{
     cursor: pointer;
     color: #647bff;
 }
+
+
+
+@media  screen and (max-width:450px) {
+
+    .calculator-grid {
+        grid-template-columns: repeat(4, 80px);
+         /* Adjust the number of columns for smaller screens */
+        overflow-x: hidden; /* Hide horizontal overflow */
+        white-space: nowrap;
+        }
+    
+      .calculator-grid > button {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+      }
+
+}
+
+

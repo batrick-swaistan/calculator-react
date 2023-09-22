@@ -190,8 +190,9 @@ function App() {
   return (
 
     <>
+    <div className='header'>
       <h1>Calculator</h1>
-    
+    </div>
     <div className="calculator-grid">
       <div className="output"> 
 
