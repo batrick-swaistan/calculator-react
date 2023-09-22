@@ -106,15 +106,18 @@ body{
 
 @media  screen and (max-width:450px) {
 
+    .output {
+        white-space: normal;
+      }
+
     .calculator-grid {
         grid-template-columns: repeat(4, 80px);
-         /* Adjust the number of columns for smaller screens */
-        overflow-x: hidden; /* Hide horizontal overflow */
+        overflow-x: hidden; 
         white-space: nowrap;
         }
     
       .calculator-grid > button {
-        font-size: 1.5rem; /* Reduce font size for smaller screens */
+        font-size: 1.5rem; 
       }
 
 }
