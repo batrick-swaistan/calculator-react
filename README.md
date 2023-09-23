@@ -24,7 +24,7 @@
 
 ## Overview
 
-![screenshot](public/calc_reactjs.png)
+![screenshot](calc_reactjs.png)
 
 - You can see my portfolio by clicking on the solution. I've hosted my project on vercel.
 - It wasmy first react project , have stucked with the concepts of react hooks but thanks to chatGPT,W3Schools and Kyle from Web dev simplified which helped me to get into the concepts of react hooks.
